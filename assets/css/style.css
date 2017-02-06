@@ -17,15 +17,13 @@
 /*********************** general styling ******************/
 body{
 	background-image: url("../images/bg5.jpg");
-
-
 }
 
 header h1 {
 	font-size: 5em;
 	font-family: ;
-	color: white;
-    text-shadow: 2px 2px 40px silver;
+	color: blue;
+    text-shadow: 2px 2px 40px black;
 }
 
 header{
@@ -33,13 +31,10 @@ header{
 	margin-bottom:50px;
 }
 
-
 /* code to set panel backgrounds transparent*/
 .panel-transparent {
         background: none;
     }
-
-
 
 /* Needed so center-block works on columns*/
 .center-block{
@@ -53,17 +48,35 @@ header{
 .panel-info > .panel-heading{
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
-	background-color: silver;	
+	background-color: silver;
+	color: black;	
+}
+
+.panel{
+min-height: 153px;
+
 }
 
 /*********************** instructions panel ******************/
 #instructions-body{
-	padding: 30px;	
+	padding: 30px;
+	font-weight: 900;	
 }
 
 #buttons{
 	margin-bottom: 50px;
 }
+
+/************** Wins, Score to Match, Losses panels ***********/
+
+div.panel-heading{font-weight: 900;}
+
+div.panel-heading.wins{color: blue;}
+
+div.panel-heading.losses{color: red;}
+
+div.panel-heading.toMatch{font-size: 1.5em;}
+
 
 /*********************** gem images ******************/
 img.img-responsive{
@@ -82,5 +95,24 @@ img.img-responsive{
 
 	margin-bottom: 60px;
 }
+div.panel-heading.score{font-size: 1.5em;}
 
+/*
+	WIN LOSE MESSEGE TESTING
 
+#winMessege, #loseMessege{
+	font-size: 10vw;
+	font-weight: 900;
+	border:1px solid red; /*for testing
+	position: absolute;
+	bottom: 0px;
+	color:blue;
+	/*visibility: hidden;
+
+}
+
+#loseMessege{
+	bottom: 625px;
+	visibility: visible;
+	/*visibility: hidden;
+}*/
