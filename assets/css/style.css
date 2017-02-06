@@ -1,3 +1,86 @@
 /*  Douglas Aquilino       February 11, 2017    */
-/*  RCB - "Psychic-Game" Homework #4            */
+/*  RCB - "Crystals Collector" Homework #4      */
 /*                style.js                      */
+
+
+
+/*=================== NOTES =======================
+			
+					WORK ON 
+					BACKGROUND
+					COLORS - TRANSPARENT
+					HEADING
+					FONTS
+					FONT-SIZES
+*/
+
+/*********************** general styling ******************/
+body{
+	background-image: url("../images/bg5.jpg");
+
+
+}
+
+header h1 {
+	font-size: 5em;
+	font-family: ;
+	color: white;
+    text-shadow: 2px 2px 40px silver;
+}
+
+header{
+	
+	margin-bottom:50px;
+}
+
+
+/* code to set panel backgrounds transparent*/
+.panel-transparent {
+        background: none;
+    }
+
+
+
+/* Needed so center-block works on columns*/
+.center-block{
+	float: none;
+}
+
+.panel-info{
+	border-radius: 25px;
+}
+
+.panel-info > .panel-heading{
+	border-top-left-radius: 25px;
+	border-top-right-radius: 25px;
+	background-color: silver;	
+}
+
+/*********************** instructions panel ******************/
+#instructions-body{
+	padding: 30px;	
+}
+
+#buttons{
+	margin-bottom: 50px;
+}
+
+/*********************** gem images ******************/
+img.img-responsive{
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+#gem1,#gem2,#gem3,#gem4{
+
+	padding: 0;
+}
+
+
+/*********************** current score panel ******************/
+#current-score{
+
+	margin-bottom: 60px;
+}
+
+
