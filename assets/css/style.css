@@ -22,7 +22,7 @@ body{
 header h1 {
 	font-size: 5em;
 	font-family: ;
-	color: blue;
+	color: silver;
     text-shadow: 2px 2px 40px black;
 }
 
@@ -54,6 +54,7 @@ header{
 
 .panel{
 min-height: 153px;
+box-shadow: 2px 2px 40px black;
 
 }
 
@@ -88,7 +89,9 @@ img.img-responsive{
 
 	padding: 0;
 }
-
+.gem:hover{
+	    transform: translateY(-5px);	 
+}
 
 /*********************** current score panel ******************/
 #current-score{

@@ -2,8 +2,6 @@
 /*  RCB - "Crystals Collector" Homework #4           */
 /*                game.js                      */
 
-
-
 // Global Variable Declarations
 
 // game object 
@@ -26,7 +24,7 @@ var game = {
 	winAlert  : function(){		
 		this.wins++;
 		this.display();
-		//alert("You Win");   //test code remove
+		alert("You Win");   //test code remove
 		this.resetGame();
 
 	},//END winAlert
@@ -35,14 +33,14 @@ var game = {
 	loseAlert : function(){
 		this.losses++;
 		this.display();
-		console.log("YOU LOSE");		//test code remove
+
 		alert("You Lose");				//test code remove
 		this.resetGame();
 		
 	},//END loseAlert
 		
 	randomize : function(){
-		this.scoreToBeat = Math.floor((Math.random()*120-19+1)+19);
+		this.scoreToBeat = Math.floor((Math.random()*(120-19))+19);
 		
 		for (var i = 1; i < 5; i++){
 			var element = "#gem" + i;
