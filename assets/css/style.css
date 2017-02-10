@@ -3,119 +3,110 @@
 /*                style.js                      */
 
 
-
-/*=================== NOTES =======================
-			
-					WORK ON 
-					BACKGROUND
-					COLORS - TRANSPARENT
-					HEADING
-					FONTS
-					FONT-SIZES
-*/
-
 /*********************** general styling ******************/
-body{
+body
+{
 	background-image: url("../images/bg5.jpg");
 }
 
-header h1 {
-	font-size: 5em;
-	font-family: ;
-	color: silver;
-    text-shadow: 2px 2px 40px black;
+header h1 
+{
+	font-size: 6em;
+	font-weight: 900;
+	color: #31b0d5;
+    text-shadow: 2px 2px 30px black;
 }
 
-header{
-	
-	margin-bottom:50px;
-}
+header{margin-bottom:50px;}
 
 /* code to set panel backgrounds transparent*/
-.panel-transparent {
-        background: none;
-    }
+.panel-transparent {background: none;}
 
 /* Needed so center-block works on columns*/
-.center-block{
-	float: none;
-}
+.center-block{float: none;}
 
-.panel-info{
-	border-radius: 25px;
-}
+.panel-info{border-radius: 25px;}
 
-.panel-info > .panel-heading{
+.panel-info > .panel-heading
+{
 	border-top-left-radius: 25px;
 	border-top-right-radius: 25px;
-	background-color: silver;
+	background-color: #31b0d5; 
 	color: black;	
 }
 
-.panel{
-min-height: 153px;
-box-shadow: 2px 2px 40px black;
-
+.panel
+{
+	min-height: 133px;
+	box-shadow: 2px 2px 40px black;
+	font-size: 1em;
+	font-weight: 900;
 }
 
 /*********************** instructions panel ******************/
-#instructions-body{
+
+#instructions-body
+{
 	padding: 30px;
 	font-weight: 900;	
 }
 
-#buttons{
-	margin-bottom: 50px;
+#buttons{margin-bottom: 50px;}
+
+.btn-info
+{
+	background: white;
+	color: black;
 }
 
 /************** Wins, Score to Match, Losses panels ***********/
 
-div.panel-heading{font-weight: 900;}
+div.panel-heading
+{
+	font-weight: 900;
+	font-size: 1.5em;
+}
 
 div.panel-heading.wins{color: blue;}
 
 div.panel-heading.losses{color: red;}
 
-div.panel-heading.toMatch{font-size: 1.5em;}
-
+#match, #wins, #losses, #score{font-size: 24px;}
 
 /*********************** gem images ******************/
-img.img-responsive{
+
+img.img-responsive
+{
 	max-width: 200px;
 	margin: 0 auto;
 }
 
-#gem1,#gem2,#gem3,#gem4{
+img.img-responsive:active{transform: scale(.95, .95);}
 
-	padding: 0;
-}
-.gem:hover{
-	    transform: translateY(-5px);	 
-}
+#gem1,#gem2,#gem3,#gem4{padding: 0;}
+
+.gem:hover{transform: translateY(-5px);}
+
 
 /*********************** current score panel ******************/
-#current-score{
 
-	margin-bottom: 60px;
-}
+#current-score{margin-bottom: 60px;}
+
 div.panel-heading.score{font-size: 1.5em;}
 
-/*
-	WIN LOSE MESSEGE TESTING
 
-#winMessege, #loseMessege{
+/*********************** win lose messeges ******************/
+
+#winMessege, #loseMessege
+{
 	font-size: 10vw;
 	font-weight: 900;
-	border:1px solid red; /*for testing
-	position: absolute;
-	bottom: 0px;
+	position: relative;
+	bottom: 435px;
 	color:blue;
-	/*visibility: hidden;
-
+	visibility: hidden;
 }
 
-#loseMessege{
-	bottom: 625px;
-	visibility: visible;
-	/*visibility: hidden;
-}*/
+#loseMessege{bottom: 625px;}
+
+#winLoseMessege{height: 0px;}
